@@ -29,8 +29,20 @@
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/theme.css" />
         <link rel="stylesheet" href="assets/css/accessibility.css" />
+        <link rel="stylesheet" href="assets/css/loading.css" />
     </head>
     <body class="pt-4">
+        <div id="loading">
+            <div
+                class="spinner-border text-danger" id="spinner-girar"
+                role="status"
+
+            >
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+            <h2>Carregando Página...</h2>
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Futebol Clube</a>
@@ -284,6 +296,12 @@
 
             <!-- Botões de filtro por modalidade -->
             <div class="text-center mb-4">
+                <button
+                    class="btn btn-outline-secondary btn-sm m-1 filter-btn"
+                    data-filter="all"
+                >
+                    Todas
+                </button>
                 <button
                     class="btn btn-outline-primary btn-sm m-1 filter-btn"
                     data-filter="futebol"
@@ -1203,8 +1221,8 @@
             rel="stylesheet"
         />
         <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-        <script src="assets/js/script.js"></script>
         <script src="assets/js/accessibilityTheme.js"></script>
         <script src="assets/js/calendar.js"></script>
+        <script src="assets/js/script.js" defer></script>
     </body>
 </html>
