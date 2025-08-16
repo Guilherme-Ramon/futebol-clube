@@ -458,11 +458,11 @@
         <section id="calendario" class="container py-5 bg-light rounded">
             <h2 class="text-center mb-4">Agenda de Treinos</h2>
 
-            <div class="mb-4 text-center">
-                <select
-                    id="filtroEsporte"
-                    class="form-select w-auto d-inline me-2"
-                >
+            <!-- Filtros -->
+            <div
+                class="mb-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
+            >
+                <select id="filtroEsporte" class="form-select w-100 w-md-auto">
                     <option value="all">Todos os esportes</option>
                     <option value="Futebol">Futebol</option>
                     <option value="Futsal">Futsal</option>
@@ -470,7 +470,7 @@
                     <option value="Atletismo">Atletismo</option>
                 </select>
 
-                <select id="filtroSub" class="form-select w-auto d-inline">
+                <select id="filtroSub" class="form-select w-100 w-md-auto">
                     <option value="all">Todos os Sub</option>
                     <option value="Sub-8">Sub-8</option>
                     <option value="Sub-13">Sub-13</option>
@@ -479,286 +479,354 @@
                 </select>
             </div>
 
+            <!-- Cards -->
             <div class="row g-3" id="cardsTreinos">
-                <div class="col-md-4 treino-card" data-dia="Segunda">
+                <!-- Segunda-feira -->
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Segunda"
+                >
                     <div class="card h-100 border-primary">
-                        <div class="card-header bg-primary text-white">
+                        <div
+                            class="card-header bg-primary text-white text-center"
+                        >
                             Segunda-feira
                         </div>
                         <div class="card-body p-2">
-                            <table
-                                class="table table-sm table-borderless mb-0 text-center"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Esporte</th>
-                                        <th>Sub</th>
-                                        <th>Local</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-esporte="Futsal" data-sub="Sub-8">
-                                        <td>18:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-8</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                    <tr data-esporte="Futsal" data-sub="Sub-13">
-                                        <td>19:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-13</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                    <tr data-esporte="Futsal" data-sub="Sub-17">
-                                        <td>20:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-17</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-8"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-8</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>19:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-13</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>20:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-17</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 treino-card" data-dia="Terça">
+                <!-- Terça-feira -->
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Terça"
+                >
                     <div class="card h-100 border-success">
-                        <div class="card-header bg-success text-white">
+                        <div
+                            class="card-header bg-success text-white text-center"
+                        >
                             Terça-feira
                         </div>
                         <div class="card-body p-2">
-                            <table
-                                class="table table-sm table-borderless mb-0 text-center"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Esporte</th>
-                                        <th>Sub</th>
-                                        <th>Local</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr
-                                        data-esporte="Futebol"
-                                        data-sub="Sub-13"
-                                    >
-                                        <td>16:00</td>
-                                        <td>Futebol</td>
-                                        <td>Sub-13</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Handball"
-                                        data-sub="Sub-15"
-                                    >
-                                        <td>17:00</td>
-                                        <td>Handball</td>
-                                        <td>Sub-15</td>
-                                        <td>Quadra Poliesportiva</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Atletismo"
-                                        data-sub="Sub-17"
-                                    >
-                                        <td>18:00</td>
-                                        <td>Atletismo</td>
-                                        <td>Sub-17</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-13</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-15</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Atletismo"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Atletismo</td>
+                                            <td>Sub-17</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 treino-card" data-dia="Quarta">
+                <!-- Quarta-feira -->
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Quarta"
+                >
                     <div class="card h-100 border-warning">
-                        <div class="card-header bg-warning text-dark">
+                        <div
+                            class="card-header bg-warning text-dark text-center"
+                        >
                             Quarta-feira
                         </div>
                         <div class="card-body p-2">
-                            <table
-                                class="table table-sm table-borderless mb-0 text-center"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Esporte</th>
-                                        <th>Sub</th>
-                                        <th>Local</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-esporte="Futsal" data-sub="Sub-8">
-                                        <td>16:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-8</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Futebol"
-                                        data-sub="Sub-13"
-                                    >
-                                        <td>17:00</td>
-                                        <td>Futebol</td>
-                                        <td>Sub-13</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Handball"
-                                        data-sub="Sub-17"
-                                    >
-                                        <td>18:00</td>
-                                        <td>Handball</td>
-                                        <td>Sub-17</td>
-                                        <td>Quadra Poliesportiva</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-8"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-8</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-13</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-17</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 treino-card" data-dia="Quinta">
+                <!-- Quinta-feira -->
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Quinta"
+                >
                     <div class="card h-100 border-info">
-                        <div class="card-header bg-info text-dark">
+                        <div class="card-header bg-info text-dark text-center">
                             Quinta-feira
                         </div>
                         <div class="card-body p-2">
-                            <table
-                                class="table table-sm table-borderless mb-0 text-center"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Esporte</th>
-                                        <th>Sub</th>
-                                        <th>Local</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-esporte="Futsal" data-sub="Sub-13">
-                                        <td>16:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-13</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Atletismo"
-                                        data-sub="Sub-15"
-                                    >
-                                        <td>17:00</td>
-                                        <td>Atletismo</td>
-                                        <td>Sub-15</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Futebol"
-                                        data-sub="Sub-17"
-                                    >
-                                        <td>18:00</td>
-                                        <td>Futebol</td>
-                                        <td>Sub-17</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-13</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Atletismo"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Atletismo</td>
+                                            <td>Sub-15</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-17</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 treino-card" data-dia="Sexta">
+                <!-- Sexta-feira -->
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Sexta"
+                >
                     <div class="card h-100 border-secondary">
-                        <div class="card-header bg-secondary text-white">
+                        <div
+                            class="card-header bg-secondary text-white text-center"
+                        >
                             Sexta-feira
                         </div>
                         <div class="card-body p-2">
-                            <table
-                                class="table table-sm table-borderless mb-0 text-center"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Esporte</th>
-                                        <th>Sub</th>
-                                        <th>Local</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr
-                                        data-esporte="Handball"
-                                        data-sub="Sub-13"
-                                    >
-                                        <td>16:00</td>
-                                        <td>Handball</td>
-                                        <td>Sub-13</td>
-                                        <td>Quadra Poliesportiva</td>
-                                    </tr>
-                                    <tr data-esporte="Futsal" data-sub="Sub-15">
-                                        <td>17:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-15</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Atletismo"
-                                        data-sub="Sub-17"
-                                    >
-                                        <td>18:00</td>
-                                        <td>Atletismo</td>
-                                        <td>Sub-17</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-13</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-15</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Atletismo"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Atletismo</td>
+                                            <td>Sub-17</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 treino-card" data-dia="Sábado">
+                <!-- Sábado -->
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Sábado"
+                >
                     <div class="card h-100 border-dark">
-                        <div class="card-header bg-dark text-white">Sábado</div>
+                        <div class="card-header bg-dark text-white text-center">
+                            Sábado
+                        </div>
                         <div class="card-body p-2">
-                            <table
-                                class="table table-sm table-borderless mb-0 text-center"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Esporte</th>
-                                        <th>Sub</th>
-                                        <th>Local</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-esporte="Futsal" data-sub="Sub-8">
-                                        <td>08:00</td>
-                                        <td>Futsal</td>
-                                        <td>Sub-8</td>
-                                        <td>Ginásio Municipal</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Futebol"
-                                        data-sub="Sub-13"
-                                    >
-                                        <td>09:00</td>
-                                        <td>Futebol</td>
-                                        <td>Sub-13</td>
-                                        <td>Campo do Clube</td>
-                                    </tr>
-                                    <tr
-                                        data-esporte="Handball"
-                                        data-sub="Sub-15"
-                                    >
-                                        <td>10:00</td>
-                                        <td>Handball</td>
-                                        <td>Sub-15</td>
-                                        <td>Quadra Poliesportiva</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-8"
+                                        >
+                                            <td>08:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-8</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>09:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-13</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>10:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-15</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1120,3 +1188,4 @@
         <script src="assets/js/calendar.js"></script>
     </body>
 </html>
+
