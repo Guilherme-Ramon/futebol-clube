@@ -1,0 +1,35 @@
+/* Loading */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    flex-direction: column;
+
+    /* Bloqueia interação com o conteúdo por baixo */
+    pointer-events: auto;
+}
+
+/* Título do loading */
+#loading h2 {
+    margin-top: 15px;
+    color: #dc3545;
+    font-family: sans-serif;
+}
+
+/* Spinner do Bootstrap */
+#spinner-girar {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Bloqueio de scroll enquanto o loading estiver ativo */
+body.loading {
+    overflow: hidden;
+}
