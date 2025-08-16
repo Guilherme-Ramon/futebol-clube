@@ -172,26 +172,6 @@ button {
     font-family: "Propins", sans-serif;
 }
 
-/* Ajustes para telas pequenas */
-#cardsTreinos .table th,
-#cardsTreinos .table td {
-    font-size: 0.8rem;
-    padding: 0.25rem;
-}
-
-@media (max-width: 576px) {
-    #cardsTreinos .card-header {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-    #cardsTreinos .table th,
-    #cardsTreinos .table td {
-        font-size: 0.7rem;
-        padding: 0.2rem;
-    }
-}
-
-
 /* Ajustes de acessibilidade e fontes grandes */
 #cardsTreinos .card-body {
     padding: 0.5rem;
