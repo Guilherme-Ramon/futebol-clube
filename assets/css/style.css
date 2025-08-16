@@ -1,3 +1,8 @@
+/* ==========================
+   FONTES
+========================== */
+@import url("https://fonts.googleapis.com/css2?family=Propins&display=swap");
+
 /* ===== Corpo e layout básico ===== */
 body {
     font-family: Arial, sans-serif;
@@ -152,11 +157,6 @@ footer {
 }
 
 /* ==========================
-   FONTES
-========================== */
-@import url("https://fonts.googleapis.com/css2?family=Propins&display=swap");
-
-/* ==========================
    BODY E TÍTULOS
 ========================== */
 body,
@@ -195,3 +195,4 @@ button {
         padding: 0.2rem;
     }
 }
+
