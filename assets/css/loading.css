@@ -1,4 +1,6 @@
-/* Loading */
+/* ==========================
+   LOADING PADRÃO
+========================== */
 #loading {
     position: fixed;
     top: 0;
@@ -14,6 +16,11 @@
 
     /* Bloqueia interação com o conteúdo por baixo */
     pointer-events: auto;
+
+    /* Transição suave (para fade) */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 /* Título do loading */
@@ -32,4 +39,29 @@
 /* Bloqueio de scroll enquanto o loading estiver ativo */
 body.loading {
     overflow: hidden;
+}
+
+/* ==========================
+   LOADING DARK MODE
+========================== */
+.dark-mode #loading {
+    background-color: #121212; /* fundo escuro */
+}
+
+.dark-mode #loading h2 {
+    color: #f8f9fa; /* texto claro */
+}
+
+.dark-mode #spinner-girar {
+    border-color: #f8f9fa;
+    border-right-color: transparent; /* mantém o efeito giratório */
+}
+
+/* ==========================
+   FADE-OUT ANIMAÇÃO
+   (quando quiser sumir o loading)
+========================== */
+#loading.fade-out {
+    opacity: 0;
+    visibility: hidden;
 }
