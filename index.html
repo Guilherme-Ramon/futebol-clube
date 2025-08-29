@@ -18,6 +18,7 @@
         />
         <meta name="author" content="Guilherme Ramon" />
 
+        <!-- Open Graph / Facebook -->
         <meta
             property="og:title"
             content="Base Futebol Clube | Formação de Jovens e Projeto Social"
@@ -28,7 +29,7 @@
         />
         <meta
             property="og:image"
-            content="https://via.placeholder.com/1200x630.png?text=Base+Futebol+Clube"
+            content="assets/img/imagem-compartilhar.png"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -36,6 +37,7 @@
             content="https://github.com/Guilherme-Ramon/base-futebol-clube"
         />
 
+        <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="twitter:title"
@@ -47,7 +49,7 @@
         />
         <meta
             name="twitter:image"
-            content="https://via.placeholder.com/1200x630.png?text=Base+Futebol+Clube"
+            content="assets/img/imagem-compartilhar.png"
         />
 
         <link
@@ -80,7 +82,7 @@
                 "@type": "SportsTeam",
                 "name": "Base Futebol Clube",
                 "url": "https://github.com/Guilherme-Ramon/base-futebol-clube",
-                "logo": "https://via.placeholder.com/200x200.png?text=Logo",
+                "logo": "assets/img/imagem-compartilhar.png",
                 "description": "Projeto de base esportiva, com foco na formação de atletas e inclusão social.",
                 "sport": "Futebol, Futsal, Handebol, Atletismo",
                 "address": {
@@ -464,6 +466,7 @@
             </div>
         </section>
 
+        <!-- Modal único -->
         <div
             class="modal fade"
             id="modalImagem"
@@ -472,15 +475,12 @@
         >
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <img src="" class="img-fluid" id="imgModal" />
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="modalImagem" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <img id="imgModal" class="modal-img" src="" />
+                    <img
+                        src=""
+                        class="img-fluid"
+                        id="imgModal"
+                        alt="Imagem da galeria"
+                    />
                 </div>
             </div>
         </div>
@@ -1352,8 +1352,5 @@
         />
         <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
         <script src="assets/js/script.js" defer></script>
-        <script>
-            
-        </script>
     </body>
 </html>

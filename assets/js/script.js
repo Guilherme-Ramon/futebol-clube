@@ -12,8 +12,17 @@ const loading = document.getElementById("loading");
    FUNÇÃO MODAL DE IMAGENS
 ======================== */
 function abrirModal(src) {
-    document.getElementById("imgModal").src = src;
-    new bootstrap.Modal(document.getElementById("modalImagem")).show();
+    const img = document.getElementById("imgModal");
+    const modalEl = document.getElementById("modalImagem");
+
+    if (!img || !modalEl) {
+        console.error("Modal ou imagem não encontrados!");
+        return;
+    }
+
+    img.src = src; // troca a imagem do modal
+    const modal = new bootstrap.Modal(modalEl);
+    modal.show();
 }
 
 /* ========================
