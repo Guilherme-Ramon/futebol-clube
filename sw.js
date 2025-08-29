@@ -43,22 +43,29 @@ self.addEventListener("activate", (event) => {
 // FETCH - retorna do cache ou busca online
 // ============================
 self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cached) => {
-      if (cached) return cached;
+  const url = new URL(event.request.url);
 
-      return fetch(event.request).then((response) => {
-        // Atualiza cache dinamicamente
-        return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, response.clone());
-          return response;
+  // Só cacheia HTTP ou HTTPS
+  if (url.protocol === "http:" || url.protocol === "https:") {
+    event.respondWith(
+      caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+
+        return fetch(event.request).then((response) => {
+          return caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        }).catch(() => {
+          // Opcional: página offline
+          // return caches.match('./offline.html');
         });
-      }).catch(() => {
-        // Opcional: página offline
-        // return caches.match('./offline.html');
-      });
-    })
-  );
+      })
+    );
+  } else {
+    // Se não for http/https, apenas busca normalmente
+    event.respondWith(fetch(event.request));
+  }
 });
 
 // ============================
