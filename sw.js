@@ -1,11 +1,31 @@
-const CACHE_NAME = "basefc-cache-v1.0.4"; // Mude a versão a cada atualização
+const CACHE_NAME = "basefc-cache-v1.0.5"; // Atualizar a versão a cada mudança
 const urlsToCache = [
   "./",
-  "./index.html?v=1.0.4",
+  "./index.html?v=1.0.5",
   "./assets/css/style.css",
+  // imagens 1 a 22
+  "./assets/images/1.png",
+  "./assets/images/2.png",
+  "./assets/images/3.png",
   "./assets/images/4.png",
   "./assets/images/5.png",
   "./assets/images/6.png",
+  "./assets/images/7.png",
+  "./assets/images/8.png",
+  "./assets/images/9.png",
+  "./assets/images/10.png",
+  "./assets/images/11.png",
+  "./assets/images/12.png",
+  "./assets/images/13.png",
+  "./assets/images/14.png",
+  "./assets/images/15.png",
+  "./assets/images/16.png",
+  "./assets/images/17.png",
+  "./assets/images/18.png",
+  "./assets/images/19.png",
+  "./assets/images/20.png",
+  "./assets/images/21.png",
+  "./assets/images/22.png",
   "./manifest.json"
 ];
 
@@ -52,12 +72,15 @@ self.addEventListener("fetch", (event) => {
         if (cached) return cached;
 
         return fetch(event.request).then((response) => {
-          return caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, response.clone());
-            return response;
-          });
+          // Só cacheia respostas básicas (evita cross-origin)
+          if (response && response.type === "basic") {
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, response.clone());
+            });
+          }
+          return response;
         }).catch(() => {
-          // Opcional: página offline
+          // Opcional: fallback offline
           // return caches.match('./offline.html');
         });
       })
