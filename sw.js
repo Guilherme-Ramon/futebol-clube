@@ -3,7 +3,6 @@ const urlsToCache = [
   "./",
   "./index.html?v=1.0.5",
   "./assets/css/style.css",
-  // imagens 1 a 22
   "./assets/images/1.png",
   "./assets/images/2.png",
   "./assets/images/3.png",
@@ -65,28 +64,31 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  // Só cacheia HTTP ou HTTPS
   if (url.protocol === "http:" || url.protocol === "https:") {
     event.respondWith(
       caches.match(event.request).then((cached) => {
         if (cached) return cached;
 
         return fetch(event.request).then((response) => {
-          // Só cacheia respostas básicas (evita cross-origin)
+          // clona a resposta antes de usar no cache
+          const responseClone = response.clone();
+
+          // só cacheia respostas básicas (evita cross-origin)
           if (response && response.type === "basic") {
             caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, response.clone());
+              cache.put(event.request, responseClone);
             });
           }
+
+          // retorna a resposta original para o navegador
           return response;
         }).catch(() => {
-          // Opcional: fallback offline
+          // opcional: fallback offline
           // return caches.match('./offline.html');
         });
       })
     );
   } else {
-    // Se não for http/https, apenas busca normalmente
     event.respondWith(fetch(event.request));
   }
 });
