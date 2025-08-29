@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="manifest.json" />
+        <meta name="theme-color" content="#b30000" />
+
+        <title>Base Futebol Clube | Formação de Jovens e Projeto Social</title>
+
+        <meta
+            name="description"
+            content="Base Futebol Clube: formação de jovens atletas, projetos sociais e treinos de futebol, futsal, handebol e atletismo. Descubra nossas equipes e metodologia."
+        />
+        <meta
+            name="keywords"
+            content="futebol, futsal, handebol, atletismo, jovens atletas, projeto social, Base Futebol Clube, esportes, treinos"
+        />
+        <meta name="author" content="Guilherme Ramon" />
+
+        <meta
+            property="og:title"
+            content="Base Futebol Clube | Formação de Jovens e Projeto Social"
+        />
+        <meta
+            property="og:description"
+            content="Projeto de base esportiva, com foco na formação de atletas e inclusão social. Treinos de futebol, futsal, handebol e atletismo."
+        />
+        <meta
+            property="og:image"
+            content="https://via.placeholder.com/1200x630.png?text=Base+Futebol+Clube"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://github.com/Guilherme-Ramon/base-futebol-clube"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Base Futebol Clube | Formação de Jovens e Projeto Social"
+        />
+        <meta
+            name="twitter:description"
+            content="Projeto de base esportiva, com foco na formação de atletas e inclusão social. Treinos de futebol, futsal, handebol e atletismo."
+        />
+        <meta
+            name="twitter:image"
+            content="https://via.placeholder.com/1200x630.png?text=Base+Futebol+Clube"
+        />
+
+        <link
+            rel="shortcut icon"
+            href="assets/favicon/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "SportsTeam",
+                "name": "Base Futebol Clube",
+                "url": "https://github.com/Guilherme-Ramon/base-futebol-clube",
+                "logo": "https://via.placeholder.com/200x200.png?text=Logo",
+                "description": "Projeto de base esportiva, com foco na formação de atletas e inclusão social.",
+                "sport": "Futebol, Futsal, Handebol, Atletismo",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Rua Exemplo, 123",
+                    "addressLocality": "São Paulo",
+                    "addressRegion": "SP",
+                    "postalCode": "01000-000",
+                    "addressCountry": "BR"
+                }
+            }
+        </script>
+    </head>
+
+    <body class="pt-4">
+        <div id="loading">
+            <div
+                class="spinner-border text-danger"
+                id="spinner-girar"
+                role="status"
+            >
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+            <h2>Carregando Página...</h2>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Futebol Clube</a>
+                <div class="d-flex align-items-center order-lg-2">
+                    <button
+                        class="navbar-toggler me-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="Abrir menu de navegação"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button
+                        id="themeToggle"
+                        class="btn btn-outline-secondary p-2"
+                        type="button"
+                        aria-label="Alternar entre tema claro e escuro"
+                    >
+                        🌙
+                    </button>
+                </div>
+                <div
+                    class="collapse navbar-collapse justify-content-center order-lg-1"
+                    id="menu"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#calendario">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vitorias">Vitórias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mapa">Mapa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="container py-5">
+            <div
+                id="carouselTopo"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="assets/images/1.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 1"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/2.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 2"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/3.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 3"
+                        />
+                    </div>
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselTopo"
+                    data-bs-slide="prev"
+                    aria-label="Imagem anterior"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselTopo"
+                    data-bs-slide="next"
+                    aria-label="Próxima imagem"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próxima</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="sobre" class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 anim-left">
+                    <h2>Quem Somos</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Distinctio neque, perferendis molestias amet
+                        quaerat unde sapiente consequuntur qui excepturi rerum
+                        exercitationem placeat est porro id numquam labore
+                        maxime, quod illo! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Rerum explicabo dolore
+                        eaque. Iusto quod impedit provident, molestiae dolore
+                        nisi magnam expedita, in voluptas nemo, dolorum omnis
+                        libero placeat sunt non!
+                    </p>
+                </div>
+                <div class="col-md-6 anim-right">
+                    <img
+                        src="assets/images/4.png"
+                        class="img-fluid rounded"
+                        alt="Equipe do Clube em ação"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="metodologia" class="container py-5 bg-light rounded">
+            <div class="row align-items-center">
+                <div class="col-md-6 anim-left">
+                    <img
+                        src="assets/images/5.png"
+                        class="img-fluid rounded"
+                        alt="Metodologia de treinamento aplicada aos jovens"
+                    />
+                </div>
+                <div class="col-md-6 anim-right">
+                    <h2>Metodologia</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque vitae purus nec arcu tristique tincidunt. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt nostrum fuga voluptates, necessitatibus totam
+                        quae ut quas doloribus! Est, quia minima placeat at
+                        animi fuga magnam sed hic nobis quaerat? Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Iure
+                        suscipit soluta et architecto, laborum ipsam velit ipsa
+                        non cum exercitationem quasi fuga totam esse similique
+                        enim at? Iure, dolorem aut.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto" class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 anim-left">
+                    <h2>
+                        Projeto Semente Futebol Clube: Formando Cidadãos Através
+                        do Esporte
+                    </h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis nihil aliquid harum iste molestiae? Quod
+                        doloremque tenetur reprehenderit facere repellat?
+                        Ratione ab id cum unde obcaecati atque earum molestiae
+                        asperiores! Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Veritatis eum blanditiis in quos animi
+                        repudiandae a corrupti nesciunt, molestias at obcaecati
+                        optio enim eos hic dolore ratione. Ut, magni minus!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Nam facere nulla sed quia nisi quo doloremque
+                        voluptate nostrum aliquam cupiditate iure aliquid
+                        eligendi necessitatibus nesciunt soluta rerum, dolor
+                        voluptatibus eum.
+                    </p>
+                </div>
+                <div class="col-md-6 anim-right">
+                    <img
+                        src="assets/images/6.png"
+                        class="img-fluid rounded"
+                        alt="Crianças participando do projeto esportivo"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="container py-5">
+            <h2 class="text-center mb-4">Nossa História</h2>
+            <div class="timeline">
+                <div class="event">
+                    <h3>2015 - Fundação do Clube</h3>
+                    <p>
+                        O projeto começou com um pequeno grupo de jovens
+                        apaixonados por futebol.
+                    </p>
+                </div>
+                <div class="event">
+                    <h3>2017 - Primeiro Título Municipal</h3>
+                    <p>
+                        Conquistamos o campeonato da cidade e ganhamos destaque
+                        na região.
+                    </p>
+                </div>
+                <div class="event">
+                    <h3>2020 - Início do Projeto Social</h3>
+                    <p>
+                        Passamos a atender crianças em situação de
+                        vulnerabilidade social.
+                    </p>
+                </div>
+                <div class="event">
+                    <h3>2024 - Expansão para Novas Modalidades</h3>
+                    <p>
+                        Incluímos futsal, handebol e atletismo em nosso
+                        programa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modalidades-material" class="container py-5">
+            <h2 class="text-center mb-4">Modalidades</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <i
+                        class="bx bx-football text-danger"
+                        style="font-size: 3rem"
+                    ></i>
+                    <h3>Futebol</h3>
+                    <p>Treinos e campeonatos oficiais.</p>
+                </div>
+                <div class="col-md-3">
+                    <span
+                        class="material-icons text-danger"
+                        style="font-size: 3rem"
+                        >sports_soccer</span
+                    >
+                    <h3>Futsal</h3>
+                    <p>Treinos em quadra com foco em técnica.</p>
+                </div>
+                <div class="col-md-3">
+                    <span
+                        class="material-icons text-danger"
+                        style="font-size: 3rem"
+                        >sports_handball</span
+                    >
+                    <h3>Handebol</h3>
+                    <p>Desenvolvimento físico e estratégico.</p>
+                </div>
+                <div class="col-md-3">
+                    <span
+                        class="material-icons text-danger"
+                        style="font-size: 3rem"
+                        >directions_run</span
+                    >
+                    <h3>Atletismo</h3>
+                    <p>Velocidade, resistência e disciplina.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="container py-5 galeria">
+            <h2 class="text-center mb-4">Nossas Equipes</h2>
+
+            <div class="text-center mb-4">
+                <button
+                    class="btn btn-outline-secondary btn-sm m-1 filter-btn"
+                    data-filter="all"
+                >
+                    Todas
+                </button>
+                <button
+                    class="btn btn-outline-primary btn-sm m-1 filter-btn"
+                    data-filter="futebol"
+                >
+                    Futebol
+                </button>
+                <button
+                    class="btn btn-outline-success btn-sm m-1 filter-btn"
+                    data-filter="futsal"
+                >
+                    Futsal
+                </button>
+                <button
+                    class="btn btn-outline-danger btn-sm m-1 filter-btn"
+                    data-filter="handball"
+                >
+                    Handball
+                </button>
+                <button
+                    class="btn btn-outline-info btn-sm m-1 filter-btn"
+                    data-filter="atletismo"
+                >
+                    Atletismo
+                </button>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4 gallery-item futebol">
+                    <img
+                        src="assets/images/7.png"
+                        class="img-fluid"
+                        onclick="abrirModal(this.src)"
+                        alt="Equipe de Futebol"
+                    />
+                </div>
+
+                <div class="col-md-4 gallery-item futsal">
+                    <img
+                        src="assets/images/8.png"
+                        class="img-fluid"
+                        onclick="abrirModal(this.src)"
+                        alt="Equipe de Futsal"
+                    />
+                </div>
+
+                <div class="col-md-4 gallery-item handball">
+                    <img
+                        src="assets/images/9.png"
+                        class="img-fluid"
+                        onclick="abrirModal(this.src)"
+                        alt="Equipe de Handball"
+                    />
+                </div>
+
+                <div class="col-md-4 gallery-item atletismo">
+                    <img
+                        src="assets/images/10.png"
+                        class="img-fluid"
+                        onclick="abrirModal(this.src)"
+                        alt="Equipe de Atletismo"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <div
+            class="modal fade"
+            id="modalImagem"
+            tabindex="-1"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="" class="img-fluid" id="imgModal" />
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalImagem" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img id="imgModal" class="modal-img" src="" />
+                </div>
+            </div>
+        </div>
+
+        <section id="equipe" class="container py-5">
+            <h2 class="text-center mb-4">Equipe Técnica</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3 team-member">
+                    <img
+                        src="assets/images/11.png"
+                        alt="Treinador"
+                        class="img-fluid rounded"
+                    />
+                    <h3 class="fs-5 fs-lg-4">João Silva</h3>
+                    <p class="fs-6 fs-lg-5">Técnico Principal</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram de João Silva">
+                            <i class="bi bi-instagram text-danger fs-1"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook de João Silva">
+                            <i class="bi bi-facebook text-danger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 team-member">
+                    <img
+                        src="assets/images/12.png"
+                        alt="Treinador"
+                        class="img-fluid rounded"
+                    />
+                    <h3 class="fs-5 fs-lg-4">Maria Souza</h3>
+                    <p class="fs-6 fs-lg-5">Preparadora Física</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram de Maria Souza">
+                            <i class="bi bi-instagram text-danger fs-1"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook de Maria Souza">
+                            <i class="bi bi-facebook text-danger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 team-member">
+                    <img
+                        src="assets/images/13.png"
+                        alt="Treinador"
+                        class="img-fluid rounded"
+                    />
+                    <h3 class="fs-5 fs-lg-4">Carlos Lima</h3>
+                    <p class="fs-6 fs-lg-5">Treinador de Goleiros</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram de Carlos Lima">
+                            <i class="bi bi-instagram text-danger fs-1"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook de Carlos Lima">
+                            <i class="bi bi-facebook text-danger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 team-member">
+                    <img
+                        src="assets/images/14.png"
+                        alt="Treinador"
+                        class="img-fluid rounded"
+                    />
+                    <h3 class="fs-5 fs-lg-4">Ana Pereira</h3>
+                    <p class="fs-6 fs-lg-5">Fisioterapeuta</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram de Ana Pereira">
+                            <i class="bi bi-instagram text-danger fs-1"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook de Ana Pereira">
+                            <i class="bi bi-facebook text-danger fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendario" class="container py-5 bg-light rounded">
+            <h2 class="text-center mb-4">Agenda de Treinos</h2>
+
+            <div
+                class="mb-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
+            >
+                <div class="me-2">
+                    <label for="filtroEsporte" class="form-label"
+                        >Escolha o esporte:</label
+                    >
+                    <select
+                        id="filtroEsporte"
+                        class="form-select w-100 w-md-auto"
+                    >
+                        <option value="all">Todos os esportes</option>
+                        <option value="Futebol">Futebol</option>
+                        <option value="Futsal">Futsal</option>
+                        <option value="Handball">Handball</option>
+                        <option value="Atletismo">Atletismo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="filtroSub" class="form-label"
+                        >Escolha o Sub:</label
+                    >
+                    <select id="filtroSub" class="form-select w-100 w-md-auto">
+                        <option value="all">Todos os Sub</option>
+                        <option value="Sub-8">Sub-8</option>
+                        <option value="Sub-13">Sub-13</option>
+                        <option value="Sub-15">Sub-15</option>
+                        <option value="Sub-17">Sub-17</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row g-3" id="cardsTreinos">
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Segunda"
+                >
+                    <div class="card h-100 border-primary">
+                        <div
+                            class="card-header bg-primary text-white text-center"
+                        >
+                            Segunda-feira
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-8"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-8</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>19:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-13</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>20:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-17</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Terça"
+                >
+                    <div class="card h-100 border-success">
+                        <div
+                            class="card-header bg-success text-white text-center"
+                        >
+                            Terça-feira
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-13</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-15</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Atletismo"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Atletismo</td>
+                                            <td>Sub-17</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Quarta"
+                >
+                    <div class="card h-100 border-warning">
+                        <div
+                            class="card-header bg-warning text-dark text-center"
+                        >
+                            Quarta-feira
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-8"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-8</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-13</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-17</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Quinta"
+                >
+                    <div class="card h-100 border-info">
+                        <div class="card-header bg-info text-dark text-center">
+                            Quinta-feira
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-13</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Atletismo"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Atletismo</td>
+                                            <td>Sub-15</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-17</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Sexta"
+                >
+                    <div class="card h-100 border-secondary">
+                        <div
+                            class="card-header bg-secondary text-white text-center"
+                        >
+                            Sexta-feira
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>16:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-13</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>17:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-15</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Atletismo"
+                                            data-sub="Sub-17"
+                                        >
+                                            <td>18:00</td>
+                                            <td>Atletismo</td>
+                                            <td>Sub-17</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-sm-6 col-lg-4 treino-card"
+                    data-dia="Sábado"
+                >
+                    <div class="card h-100 border-dark">
+                        <div class="card-header bg-dark text-white text-center">
+                            Sábado
+                        </div>
+                        <div class="card-body p-2">
+                            <div class="table-responsive">
+                                <table
+                                    class="table table-sm table-borderless text-center mb-0"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th>Hora</th>
+                                            <th>Esporte</th>
+                                            <th>Sub</th>
+                                            <th>Local</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            data-esporte="Futsal"
+                                            data-sub="Sub-8"
+                                        >
+                                            <td>08:00</td>
+                                            <td>Futsal</td>
+                                            <td>Sub-8</td>
+                                            <td>Ginásio Municipal</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Futebol"
+                                            data-sub="Sub-13"
+                                        >
+                                            <td>09:00</td>
+                                            <td>Futebol</td>
+                                            <td>Sub-13</td>
+                                            <td>Campo do Clube</td>
+                                        </tr>
+                                        <tr
+                                            data-esporte="Handball"
+                                            data-sub="Sub-15"
+                                        >
+                                            <td>10:00</td>
+                                            <td>Handball</td>
+                                            <td>Sub-15</td>
+                                            <td>Quadra Poliesportiva</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vitorias" class="container py-5">
+            <h2 class="text-center mb-4">Galeria de Vitórias & Troféus</h2>
+
+            <div
+                id="carouselVitorias"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="assets/images/15.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 1"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/16.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 2"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/17.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 3"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/18.png"
+                            class="d-block w-100 carousel-vitorias"
+                            alt="Troféu 4"
+                        />
+                    </div>
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselVitorias"
+                    data-bs-slide="prev"
+                    aria-label="Imagem anterior"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselVitorias"
+                    data-bs-slide="next"
+                    aria-label="Próxima imagem"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próxima</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="patrocinadores" class="container py-5 text-center">
+            <h2 class="mb-4">Patrocinadores & Apoiadores</h2>
+            <div class="row justify-content-center align-items-center g-3">
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="sponsor-link"
+                    >
+                        <div class="sponsor-card position-relative">
+                            <img
+                                src="assets/images/19.png"
+                                class="img-fluid rounded"
+                                alt="Patrocinador 1"
+                            />
+                            <div
+                                class="overlay d-flex justify-content-center align-items-center"
+                            >
+                                <i class="bi bi-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="sponsor-link"
+                    >
+                        <div class="sponsor-card position-relative">
+                            <img
+                                src="assets/images/20.png"
+                                class="img-fluid rounded"
+                                alt="Patrocinador 2"
+                            />
+                            <div
+                                class="overlay d-flex justify-content-center align-items-center"
+                            >
+                                <i class="bi bi-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="sponsor-link"
+                    >
+                        <div class="sponsor-card position-relative">
+                            <img
+                                src="assets/images/21.png"
+                                class="img-fluid rounded"
+                                alt="Patrocinador 3"
+                            />
+                            <div
+                                class="overlay d-flex justify-content-center align-items-center"
+                            >
+                                <i class="bi bi-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-3">
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="sponsor-link"
+                    >
+                        <div class="sponsor-card position-relative">
+                            <img
+                                src="assets/images/22.png"
+                                class="img-fluid rounded"
+                                alt="Patrocinador 3"
+                            />
+                            <div
+                                class="overlay d-flex justify-content-center align-items-center"
+                            >
+                                <i class="bi bi-instagram text-white fs-2"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="container py-5 bg-light rounded">
+            <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse1"
+                            aria-expanded="false"
+                            aria-controls="faqCollapse1"
+                        >
+                            Como posso me inscrever no clube?
+                        </button>
+                    </h2>
+                    <div
+                        id="faqCollapse1"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="faqHeading1"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Você pode se inscrever diretamente na nossa página
+                            de contato ou comparecendo ao clube durante os
+                            horários de atendimento.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse2"
+                            aria-expanded="false"
+                            aria-controls="faqCollapse2"
+                        >
+                            Quais modalidades o clube oferece?
+                        </button>
+                    </h2>
+                    <div
+                        id="faqCollapse2"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="faqHeading2"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Oferecemos Futebol, Futsal, Handebol e Atletismo,
+                            com treinos para várias faixas etárias.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse3"
+                            aria-expanded="false"
+                            aria-controls="faqCollapse3"
+                        >
+                            Existe algum custo para participar?
+                        </button>
+                    </h2>
+                    <div
+                        id="faqCollapse3"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="faqHeading3"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Algumas modalidades são gratuitas, enquanto outras
+                            podem ter taxa de inscrição ou mensalidade. Consulte
+                            nossa equipe para detalhes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse4"
+                            aria-expanded="false"
+                            aria-controls="faqCollapse4"
+                        >
+                            Como acompanhar os jogos e treinos?
+                        </button>
+                    </h2>
+                    <div
+                        id="faqCollapse4"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="faqHeading4"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Todos os treinos e jogos são divulgados na nossa
+                            agenda online, redes sociais do clube.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa" class="container py-5 bg-light rounded">
+            <h2 class="text-center mb-4">Mapa de Treinos</h2>
+
+            <div class="mb-3">
+                <label for="seletorMapa" class="form-label"
+                    >Escolha o local do treino:</label
+                >
+                <select id="seletorMapa" class="form-select mb-3">
+                    <option
+                        value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0000000000005!2d-46.650000!3d-23.560000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c0a0000001%3A0x1111111111111111!2sCampo%20do%20Clube%20SP!5e1!3m2!1spt-BR!2sbr!4v1755190830800!5m2!1spt-BR!2sbr"
+                    >
+                        Campo do Clube
+                    </option>
+                    <option
+                        value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0000000000005!2d-46.652000!3d-23.562000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c0a0000002%3A0x2222222222222222!2sGin%C3%A1sio%20Municipal%20SP!5e1!3m2!1spt-BR!2sbr!4v1755190830801!5m2!1spt-BR!2sbr"
+                    >
+                        Ginásio Municipal
+                    </option>
+                    <option
+                        value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0000000000005!2d-46.655000!3d-23.565000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c0a0000003%3A0x3333333333333333!2sQuadra%20Poliesportiva%20SP!5e1!3m2!1spt-BR!2sbr!4v1755190830802!5m2!1spt-BR!2sbr"
+                    >
+                        Quadra Poliesportiva
+                    </option>
+                </select>
+            </div>
+
+            <div class="ratio ratio-16x9">
+                <iframe
+                    id="iframeMapa"
+                    title="Mapa do local de treino selecionado"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0000000000005!2d-46.650000!3d-23.560000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c0a0000001%3A0x1111111111111111!2sCampo%20do%20Clube%20SP!5e1!3m2!1spt-BR!2sbr!4v1755190830800!5m2!1spt-BR!2sbr"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </section>
+
+        <section id="contato" class="container py-5 text-center">
+            <h2>Contato & Redes Sociais</h2>
+            <p><i class="bi bi-geo-alt"></i> Futebol - Clube</p>
+
+            <a
+                href="https://wa.me/999999999999"
+                target="_blank"
+                class="btn btn-success m-1"
+            >
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+            <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="btn btn-danger m-1"
+            >
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="btn btn-primary m-1"
+            >
+                <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a
+                href="https://www.tiktok.com"
+                target="_blank"
+                class="btn btn-dark m-1"
+            >
+                <i class="bi bi-tiktok"></i> TikTok
+            </a>
+        </section>
+
+        <div id="menuAcessibilidade" class="acessibilidade-container">
+            <button
+                id="btnToggleAcessibilidade"
+                class="btn btn-danger acessibilidade-btn"
+                aria-label="Abrir painel de acessibilidade"
+            >
+                <i class="bi bi-universal-access" aria-hidden="true"></i>
+            </button>
+
+            <div id="painelAcessibilidade" class="acessibilidade-painel">
+                <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                >
+                    <h5 class="mb-0">Acessibilidade</h5>
+                </div>
+
+                <button
+                    id="btnAumentarFonte"
+                    class="btn btn-primary w-100 mb-2"
+                >
+                    Aumentar Fonte
+                </button>
+                <button
+                    id="btnDiminuirFonte"
+                    class="btn btn-primary w-100 mb-2"
+                >
+                    Diminuir Fonte
+                </button>
+                <button id="btnAltoContraste" class="btn btn-dark w-100 mb-2">
+                    Alto Contraste
+                </button>
+                <button
+                    id="btnFontePadrao"
+                    class="btn btn-secondary w-100 mb-2"
+                >
+                    Padrão
+                </button>
+                <button id="btnRemoverPainel" class="btn btn-danger w-100">
+                    Remover
+                </button>
+            </div>
+        </div>
+        <button
+            id="btnTopo"
+            class="btn-topo"
+            aria-label="Voltar ao topo da página"
+        >
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </button>
+
+        <footer>
+            <p>
+                &copy; <span id="ano"></span> Base Futebol Clube. Todos os
+                direitos reservados.
+            </p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+        <script src="assets/js/script.js" defer></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
